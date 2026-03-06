@@ -18,7 +18,7 @@ Pribt everything out
 using namespace std;
 
 int main() {
-    string Name;
+    string name;
     double balance, deposit, withdrawal;
     int accountNumber = 12345; // Picked a static number [cite: 17]
 
@@ -39,18 +39,8 @@ int main() {
     cout << fixed << setprecision(2);
     cout << "/n--- Account Summary ---" << endl;
     cout << "Name: " << name << endl;
-    cout << "Account Number: " <, accountNumber << endl;
+    cout << "Account Number: " <<  accountNumber << endl;
     cout << "Final Balance: $" << balance << endl;
 
     return 0;
-}
-
-
-
-
-
-
-
-
-
 }
