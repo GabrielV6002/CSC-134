@@ -1,0 +1,124 @@
+M5HW1
+Gabriel Villalongo
+Gold
+
+
+
+#include <iostream>
+using namespace std;
+
+void q1() {
+    string a, b, c;
+    double x, y, z;
+
+    cout << "Enter month: ";
+    cin >> a;
+    cout << "Rain: ";
+    cin >> x;
+
+    cout << "Enter month: ";
+    cin >> b;
+    cout << "Rain: ";
+    cin >> y;
+
+    cout << "Enter month: ";
+    cin >> c;
+    cout << "Rain: ";
+    cin >> z;
+
+    double avg = (x + y + z) / 3;
+    cout << "Average = " << avg << endl;
+}
+
+void q2() {
+    double w, l, h;
+    cout << "Enter width length height: ";
+    cin >> w >> l >> h;
+
+    if (w <= 0 || l <= 0 || h <= 0)
+        cout << "Invalid\n";
+    else
+        cout << "Volume = " << w*l*h << endl;
+}
+
+void q3() {
+    int n;
+    cout << "Enter 1-10: ";
+    cin >> n;
+
+    if (n == 1) cout << "I\n";
+    else if (n == 2) cout << "II\n";
+    else if (n == 3) cout << "III\n";
+    else if (n == 4) cout << "IV\n";
+    else if (n == 5) cout << "V\n";
+    else if (n == 6) cout << "VI\n";
+    else if (n == 7) cout << "VII\n";
+    else if (n == 8) cout << "VIII\n";
+    else if (n == 9) cout << "IX\n";
+    else if (n == 10) cout << "X\n";
+    else cout << "Invalid\n";
+}
+
+void q4() {
+    int c;
+    cout << "1 circle 2 rectangle 3 triangle 4 quit: ";
+    cin >> c;
+
+    if (c == 1) {
+        double r;
+        cin >> r;
+        if (r < 0) cout << "bad\n";
+        else cout << 3.14159*r*r << endl;
+    }
+    else if (c == 2) {
+        double l, w;
+        cin >> l >> w;
+        if (l < 0 || w < 0) cout << "bad\n";
+        else cout << l*w << endl;
+    }
+    else if (c == 3) {
+        double b, h;
+        cin >> b >> h;
+        if (b < 0 || h < 0) cout << "bad\n";
+        else cout << 0.5*b*h << endl;
+    }
+    else if (c != 4) {
+        cout << "wrong choice\n";
+    }
+}
+
+void q5() {
+    double s;
+    int t;
+
+    cout << "Enter speed and time: ";
+    cin >> s >> t;
+
+    if (s < 0 || t < 1) {
+        cout << "Invalid\n";
+    } else {
+        for (int i = 1; i <= t; i++) {
+            cout << i << " " << s*i << endl;
+        }
+    }
+}
+
+int main() {
+    int c;
+
+    do {
+        cout << "\n1 q1 2 q2 3 q3 4 q4 5 q5 6 exit: ";
+        cin >> c;
+
+        if (c == 1) q1();
+        else if (c == 2) q2();
+        else if (c == 3) q3();
+        else if (c == 4) q4();
+        else if (c == 5) q5();
+        else if (c == 6) cout << "bye\n";
+        else cout << "invalid\n";
+
+    } while (c != 6);
+
+    return 0;
+}
