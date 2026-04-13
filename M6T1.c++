@@ -7,7 +7,7 @@ Gabriel Villalongo
 #include <iostream>
 using namespace std;
 
-int main()
+int main() {
 
 // Set up variables
 const int SIZE = 5; // changing this is the only wat to resize the array
@@ -18,9 +18,15 @@ cout << "This program will ask you to enter a count of cars seem. " << endl;
 // first loop: get data
 for (int i=0; i<SIZE; i++) {
     cout << "Day" << i+1 << ": ";
-    cin >> cars[i] // add that day's cars
+    cin >> cars[i]; // add that day's cars
 }
 // second loop: sum and average
+for (int i=0; i<SIZE; i++) {
+    sum+= cars[i]; // add that day's cars
+
+}
+
+
 average=sum / SIZE;
 cout << "Over" << SIZE << " days, " << endl;
 cout << "Total cars: " << sum << endl;
