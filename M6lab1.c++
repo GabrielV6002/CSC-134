@@ -29,6 +29,14 @@ int main() {
 
     // How full is it? Just ask.
     cout << magazine.size();
+    // Now Let's test it
+    int slime=3;
+    int water=2;
+    loadMagazine(magazine, slime water);
+    // How full is it? Just ask.
+    cout << "Mag size; " << magazine.size();
+    // Show what's loaded
+    displayMagazine(magzine);
 }
 
 // Full Functions go here
