@@ -32,11 +32,18 @@ int main() {
     // Now Let's test it
     int slime=3;
     int water=2;
-    loadMagazine(magazine, slime water);
+    loadMagazine(magazine, slime, water);
     // How full is it? Just ask.
     cout << "Mag size; " << magazine.size();
     // Show what's loaded
-    displayMagazine(magzine);
+    displayMagazine(magazine);
+
+    // Fire a Shot
+    if (!magazine.empty()) {
+        char s = fireShot(magazine);
+        cout << "You fired; " << s << endl;
+
+    }
 }
 
 // Full Functions go here
