@@ -31,4 +31,8 @@ average=sum / SIZE;
 cout << "Over" << SIZE << " days, " << endl;
 cout << "Total cars: " << sum << endl;
 cout << "Average:    " << average << endl;
+
+// Extra: A simple bar chart
+const int SCALE = 1; // 1 bar = 1 car
+for (int )
 }
