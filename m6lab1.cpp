@@ -44,6 +44,14 @@ int main() {
         cout << "You fired; " << s << endl;
 
     }
+    // list again after the shot
+    displayMagazine(magazine);
+    // What else do we need?
+    // Taking turns, dealer and player alternate
+    // Hit points (-1 HP from slime)
+    // Maybe some items
+    // Each round changes what's Loaded?
+    // and more
 }
 
 // Full Functions go here
